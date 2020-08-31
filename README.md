@@ -1,7 +1,5 @@
 # [CVE-2019-16759]vBulletin_Routestring-RCE-PoC
-Python Script for Vuln Test 
-
-Usage : python vBulletin_Routestring-RCE.py <dst_ip> <port>
+Usage : python vBulletin_Routestring-RCE.py <dst_ip> <dst_port>
 
 Script based on Python2
 
