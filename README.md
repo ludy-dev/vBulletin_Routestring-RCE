@@ -8,6 +8,7 @@ vBulletin Version 5.0.0 ~ 5.5.4
 
 [Usage]
 (User defined port) python vBulletin_Routestring-RCE.py <dst_ip> <dst_port>
+
 (default Port:80)   python vBulletin_Routestring-RCE.py <dst_ip>
 
 Script based on Python2
