@@ -7,11 +7,11 @@ System Affected :
 vBulletin Version 5.0.0 ~ 5.5.4 
 (Updated System affected) vBulletin Version 5.0.0 ~ 5.6.2
 
-[Usage]
+Usage>
 
-(User defined port) python vBulletin_Routestring-RCE.py <dst_ip> <dst_port>
+  python vBulletin_Routestring-RCE.py <dst_ip> <dst_port> (User defined port) 
 
-(default Port:80)   python vBulletin_Routestring-RCE.py <dst_ip>
+  python vBulletin_Routestring-RCE.py <dst_ip> (default Port:80)   
 
 Script based on Python2
 Not For attack. just using Vuln Test for your System
