@@ -13,5 +13,7 @@ Usage>
 
     python vBulletin_Routestring-RCE.py <dst_ip> (default Port:80)   
 
-Script based on Python2
+Script was editted for Python3 
+
+
 Not For attack. just using Vuln Test for your System
